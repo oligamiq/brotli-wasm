@@ -5,4 +5,7 @@
 // For usage with an importmap, it's convenient to add the ".js" extension here, because browsers
 // don't try to guess the file extension.
 import init, * as brotliWasm from "./pkg.web/brotli_wasm.js";
-export default init().then(() => brotliWasm);
+// export default init().then(() => brotliWasm);
+// export * from "./pkg.web/brotli_wasm.js";
+export default init;
+export * from "./pkg.web/brotli_wasm.js";
